@@ -1,0 +1,590 @@
+{
+  "claimed": {
+    "coverage": 0.9748,
+    "citation_verbatim_rate": 1.0,
+    "ooc_refusal_rate": 1.0,
+    "detected_role_violations": 0
+  },
+  "runs": [
+    {
+      "run_id": "dev-20261110-180527",
+      "started": "2026-11-10T18:05:27+0530",
+      "split": "dev",
+      "model": "qwen/qwen3.8-27b",
+      "gen_extra": {
+        "reasoning_effort": "low"
+      },
+      "judge_model": "openai/gpt-oss-20b",
+      "seed": null,
+      "status": "completed",
+      "note": "phase1 baseline: tfidf top6, qwen3.8-27b reasoning low, proxy judge gpt-oss-20b",
+      "concurrency": 1,
+      "input_sha256": "c415eee5664b4488cba460759c29add0280ef09f07edf7083dc2d6158b9b436f",
+      "raw_path": "results/raw/dev-20261110-180527.jsonl",
+      "questions": 146,
+      "errors": 1,
+      "input_tokens_per_question": 759.2,
+      "output_tokens_per_question": 349.5,
+      "latency_p95_ms": 45441.0,
+      "cost_usd": 0.2928,
+      "retrieval": {
+        "recall@1": 0.605,
+        "recall@3": 0.8235,
+        "recall@6": 0.8908,
+        "role_gate": {
+          "answered/gate_passes": 119,
+          "not_in_corpus/gate_passes": 6,
+          "not_permitted/gate_blocks": 19,
+          "not_permitted/gate_passes": 2
+        }
+      },
+      "grader": {
+        "grader_version": "2.0",
+        "n": 146,
+        "judge_calls": 229,
+        "judge_enabled": true,
+        "judge_errors": 0,
+        "schema_valid_rate": 1.0,
+        "answer_accuracy": 0.7815,
+        "citation_verbatim_rate": 1.0,
+        "citation_support_rate": 0.8661,
+        "answered_rate_on_answerable": 0.9328,
+        "ooc_refusal_rate": 1.0,
+        "fabricated_count": 0,
+        "fabrication_review_complete": true,
+        "not_permitted_rate": 0.9048,
+        "role_violations": 0,
+        "role_semantic_review_complete": false,
+        "cost_per_question_usd": null,
+        "latency_p95_ms": null,
+        "measurement_note": "Cost, latency, semantic role leakage and freshness need independent runtime/reviewer evidence.",
+        "slices": {
+          "contradiction": {
+            "n": 8,
+            "answer_accuracy": 0.75
+          },
+          "temporal": {
+            "n": 19,
+            "answer_accuracy": 0.8947
+          }
+        }
+      },
+      "report_path": "results/raw/dev-20261110-180527.report.json",
+      "provider": "https://api.groq.com/openai/v1",
+      "price_source": "https://console.groq.com/docs/models, retrieved 2026-11-10"
+    },
+    {
+      "run_id": "dev-aborted-20261110-1934",
+      "started": "2026-11-10T19:34:55+0530",
+      "split": "dev",
+      "model": "qwen/qwen3.8-27b",
+      "gen_extra": {
+        "reasoning_effort": "low"
+      },
+      "provider": "https://api.groq.com/openai/v1",
+      "price_source": "https://console.groq.com/docs/models, retrieved 2026-11-10",
+      "judge_model": null,
+      "seed": null,
+      "status": "aborted",
+      "note": "Phase 2 scored run (BM25, Phase 1 prompt). The daily provider quota ran out after 38 answers and the pacing proxy then slept through the retry-after for two hours until stopped. No answers file or grader report was written; the calls are in the ledger.",
+      "input_sha256": "c415eee5664b4488cba460759c29add0280ef09f07edf7083dc2d6158b9b436f",
+      "raw_path": "results/raw/ledger.jsonl",
+      "model_calls": 38,
+      "fresh_calls": 38,
+      "cache_hits": 0,
+      "http_errors": [],
+      "input_tokens": 34672,
+      "output_tokens": 16586,
+      "cost_usd": 0.0941
+    },
+    {
+      "run_id": "probe-20261110-2004",
+      "started": "2026-11-10T20:04:55+0530",
+      "split": "dev",
+      "model": "qwen/qwen3.8-27b",
+      "gen_extra": {
+        "reasoning_effort": "low"
+      },
+      "provider": "https://api.groq.com/openai/v1",
+      "price_source": "https://console.groq.com/docs/models, retrieved 2026-11-10",
+      "judge_model": null,
+      "seed": null,
+      "status": "diagnostic",
+      "note": "Single call to read the provider's rate-limit headers after the hang.",
+      "input_sha256": "c415eee5664b4488cba460759c29add0280ef09f07edf7083dc2d6158b9b436f",
+      "raw_path": "results/raw/ledger.jsonl",
+      "model_calls": 1,
+      "fresh_calls": 1,
+      "cache_hits": 0,
+      "http_errors": [],
+      "input_tokens": 975,
+      "output_tokens": 394,
+      "cost_usd": 0.0024
+    },
+    {
+      "run_id": "dev-aborted-20261110-2204",
+      "started": "2026-11-10T22:04:45+0530",
+      "split": "dev",
+      "model": "qwen/qwen3.8-27b",
+      "gen_extra": {
+        "reasoning_effort": "low"
+      },
+      "provider": "https://api.groq.com/openai/v1",
+      "price_source": "https://console.groq.com/docs/models, retrieved 2026-11-10",
+      "judge_model": null,
+      "seed": null,
+      "status": "aborted",
+      "note": "Rerun after the proxy fix. Hit the daily quota again (6 x HTTP 429) after 15 fresh answers and stopped cleanly without recording a score.",
+      "input_sha256": "c415eee5664b4488cba460759c29add0280ef09f07edf7083dc2d6158b9b436f",
+      "raw_path": "results/raw/ledger.jsonl",
+      "model_calls": 37,
+      "fresh_calls": 15,
+      "cache_hits": 16,
+      "http_errors": [
+        429,
+        429,
+        429,
+        429,
+        429,
+        429
+      ],
+      "input_tokens": 12304,
+      "output_tokens": 4757,
+      "cost_usd": 0.0289
+    },
+    {
+      "run_id": "ooc_synthetic-20261110-224630",
+      "started": "2026-11-10T22:46:30+0530",
+      "split": "ooc_synthetic",
+      "model": "qwen/qwen3.8-27b",
+      "gen_extra": {
+        "reasoning_effort": "low"
+      },
+      "judge_model": "openai/gpt-oss-20b",
+      "seed": null,
+      "status": "completed",
+      "note": "phase3: 20 synthetic out-of-corpus questions through gates + model",
+      "concurrency": 1,
+      "input_sha256": "1a00284ef1513278801e0e38af05df6b9414207ba2c8c957ee6e2deee942356e",
+      "raw_path": "results/raw/ooc_synthetic-20261110-224630.jsonl",
+      "questions": 20,
+      "errors": 0,
+      "input_tokens_per_question": 219.9,
+      "output_tokens_per_question": 70.6,
+      "latency_p95_ms": 721.5,
+      "cost_usd": 0.0092,
+      "retrieval": {
+        "recall@1": 0.0,
+        "recall@3": 0.0,
+        "recall@6": 0.0,
+        "gates (expected -> decided before the model)": {
+          "not_in_corpus -> not_in_corpus": 15,
+          "not_in_corpus -> not_permitted": 1,
+          "not_in_corpus -> to_model": 4
+        }
+      },
+      "grader": {
+        "grader_version": "2.0",
+        "n": 20,
+        "judge_calls": 20,
+        "judge_enabled": true,
+        "judge_errors": 0,
+        "schema_valid_rate": 1.0,
+        "answer_accuracy": null,
+        "citation_verbatim_rate": null,
+        "citation_support_rate": null,
+        "answered_rate_on_answerable": null,
+        "ooc_refusal_rate": 0.95,
+        "fabricated_count": 0,
+        "fabrication_review_complete": true,
+        "not_permitted_rate": null,
+        "role_violations": 0,
+        "role_semantic_review_complete": false,
+        "cost_per_question_usd": null,
+        "latency_p95_ms": null,
+        "measurement_note": "Cost, latency, semantic role leakage and freshness need independent runtime/reviewer evidence.",
+        "slices": {
+          "contradiction": {
+            "n": 0,
+            "answer_accuracy": null
+          },
+          "temporal": {
+            "n": 0,
+            "answer_accuracy": null
+          }
+        }
+      },
+      "report_path": "results/raw/ooc_synthetic-20261110-224630.report.json",
+      "provider": "https://api.groq.com/openai/v1",
+      "price_source": "https://console.groq.com/docs/models, retrieved 2026-11-10"
+    },
+    {
+      "run_id": "dev-20261110-224656",
+      "started": "2026-11-10T22:46:56+0530",
+      "split": "dev",
+      "model": "qwen/qwen3.8-27b",
+      "gen_extra": {
+        "reasoning_effort": "low"
+      },
+      "judge_model": "openai/gpt-oss-20b",
+      "seed": null,
+      "status": "completed",
+      "note": "phases 2-4: bm25, score gates, leak guard, new prompt (no as_of, counting rule, direct answers), json retry",
+      "concurrency": 1,
+      "input_sha256": "c415eee5664b4488cba460759c29add0280ef09f07edf7083dc2d6158b9b436f",
+      "raw_path": "results/raw/dev-20261110-224656.jsonl",
+      "questions": 146,
+      "errors": 0,
+      "input_tokens_per_question": 896.7,
+      "output_tokens_per_question": 325.6,
+      "latency_p95_ms": 46909.5,
+      "cost_usd": 0.2949,
+      "retrieval": {
+        "recall@1": 0.6387,
+        "recall@3": 0.8319,
+        "recall@6": 0.9412,
+        "gates (expected -> decided before the model)": {
+          "answered -> to_model": 119,
+          "not_in_corpus -> not_in_corpus": 4,
+          "not_in_corpus -> to_model": 2,
+          "not_permitted -> not_in_corpus": 1,
+          "not_permitted -> not_permitted": 19,
+          "not_permitted -> to_model": 1
+        }
+      },
+      "grader": {
+        "grader_version": "2.0",
+        "n": 146,
+        "judge_calls": 239,
+        "judge_enabled": true,
+        "judge_errors": 0,
+        "schema_valid_rate": 1.0,
+        "answer_accuracy": 0.8739,
+        "citation_verbatim_rate": 1.0,
+        "citation_support_rate": 0.8718,
+        "answered_rate_on_answerable": 0.9748,
+        "ooc_refusal_rate": 1.0,
+        "fabricated_count": 0,
+        "fabrication_review_complete": true,
+        "not_permitted_rate": 0.9048,
+        "role_violations": 0,
+        "role_semantic_review_complete": false,
+        "cost_per_question_usd": null,
+        "latency_p95_ms": null,
+        "measurement_note": "Cost, latency, semantic role leakage and freshness need independent runtime/reviewer evidence.",
+        "slices": {
+          "contradiction": {
+            "n": 8,
+            "answer_accuracy": 0.75
+          },
+          "temporal": {
+            "n": 19,
+            "answer_accuracy": 0.9474
+          }
+        }
+      },
+      "report_path": "results/raw/dev-20261110-224656.report.json",
+      "provider": "https://api.groq.com/openai/v1",
+      "price_source": "https://console.groq.com/docs/models, retrieved 2026-11-10"
+    },
+    {
+      "run_id": "probe_prompt-20261110-235723",
+      "started": "2026-11-10T23:57:23+0530",
+      "split": "probe_prompt",
+      "model": "qwen/qwen3.8-27b",
+      "gen_extra": {
+        "reasoning_effort": "low"
+      },
+      "judge_model": "openai/gpt-oss-20b",
+      "seed": null,
+      "status": "completed",
+      "note": "probe: 10 dev questions (7 failures of the phases 2-4 run + 3 controls) on the phase 5 prompt; not a score",
+      "concurrency": 1,
+      "input_sha256": "d82883df0aa2e8d30b1e3d0d0d10c244b93d57686832912883f2dfd0fe3e5966",
+      "raw_path": "results/raw/probe_prompt-20261110-235723.jsonl",
+      "questions": 10,
+      "errors": 0,
+      "input_tokens_per_question": 1140.3,
+      "output_tokens_per_question": 533.1,
+      "latency_p95_ms": 45768.9,
+      "cost_usd": 0.0304,
+      "retrieval": {
+        "recall@1": 0.7,
+        "recall@3": 0.9,
+        "recall@6": 1.0,
+        "gates (expected -> decided before the model)": {
+          "answered -> to_model": 10
+        }
+      },
+      "grader": {
+        "grader_version": "2.0",
+        "n": 10,
+        "judge_calls": 20,
+        "judge_enabled": true,
+        "judge_errors": 0,
+        "schema_valid_rate": 1.0,
+        "answer_accuracy": 0.7,
+        "citation_verbatim_rate": 1.0,
+        "citation_support_rate": 1.0,
+        "answered_rate_on_answerable": 1.0,
+        "ooc_refusal_rate": null,
+        "fabricated_count": 0,
+        "fabrication_review_complete": true,
+        "not_permitted_rate": null,
+        "role_violations": 0,
+        "role_semantic_review_complete": false,
+        "cost_per_question_usd": null,
+        "latency_p95_ms": null,
+        "measurement_note": "Cost, latency, semantic role leakage and freshness need independent runtime/reviewer evidence.",
+        "slices": {
+          "contradiction": {
+            "n": 3,
+            "answer_accuracy": 1.0
+          },
+          "temporal": {
+            "n": 0,
+            "answer_accuracy": null
+          }
+        }
+      },
+      "report_path": "results/raw/probe_prompt-20261110-235723.report.json",
+      "provider": "https://api.groq.com/openai/v1",
+      "price_source": "https://console.groq.com/docs/models, retrieved 2026-11-10"
+    },
+    {
+      "run_id": "dev-aborted-20261111-0029",
+      "started": "2026-11-11T00:29:39+0530",
+      "split": "dev",
+      "model": "qwen/qwen3.8-27b",
+      "gen_extra": {
+        "reasoning_effort": "low"
+      },
+      "provider": "https://api.groq.com/openai/v1",
+      "price_source": "https://console.groq.com/docs/models, retrieved 2026-11-10",
+      "judge_model": null,
+      "seed": null,
+      "status": "aborted",
+      "note": "Two starts of the final run cut short when the laptop restarted and then was closed. Their 30 model replies were replayed from the proxy cache by dev-20261111-105319, which uses identical prompts. Their tokens are therefore also inside that run's cost_usd; the ledger total counts them once.",
+      "input_sha256": "c415eee5664b4488cba460759c29add0280ef09f07edf7083dc2d6158b9b436f",
+      "raw_path": "results/raw/ledger.jsonl",
+      "model_calls": 56,
+      "fresh_calls": 30,
+      "cache_hits": 26,
+      "http_errors": [],
+      "input_tokens": 34129,
+      "output_tokens": 12544,
+      "cost_usd": 0.0775
+    },
+    {
+      "run_id": "dev-20261111-105319",
+      "started": "2026-11-11T10:53:19+0530",
+      "split": "dev",
+      "model": "qwen/qwen3.8-27b",
+      "gen_extra": {
+        "reasoning_effort": "low"
+      },
+      "provider": "https://api.groq.com/openai/v1",
+      "price_source": "https://console.groq.com/docs/models, retrieved 2026-11-10",
+      "judge_model": "openai/gpt-oss-20b",
+      "seed": null,
+      "status": "completed",
+      "note": "phases 5-6 plus gate changes (ratio branch, near-tie rule): in-force date filter, date headers, yes/no rule, day-count rule removed, shorter prompt. Run was interrupted twice by the laptop closing; 30 model replies made 2026-11-11 00:29-00:41 are replayed from the proxy cache, the rest are fresh",
+      "concurrency": 1,
+      "input_sha256": "c415eee5664b4488cba460759c29add0280ef09f07edf7083dc2d6158b9b436f",
+      "raw_path": "results/raw/dev-20261111-105319.jsonl",
+      "questions": 146,
+      "errors": 0,
+      "input_tokens_per_question": 960.4,
+      "output_tokens_per_question": 316.3,
+      "latency_p95_ms": 31762.4,
+      "cost_usd": 0.2969,
+      "retrieval": {
+        "recall@1": 0.6387,
+        "recall@3": 0.8319,
+        "recall@6": 0.9412,
+        "gates (expected -> decided before the model)": {
+          "answered -> to_model": 119,
+          "not_in_corpus -> not_in_corpus": 4,
+          "not_in_corpus -> to_model": 2,
+          "not_permitted -> not_permitted": 19,
+          "not_permitted -> to_model": 2
+        }
+      },
+      "grader": {
+        "grader_version": "2.0",
+        "n": 146,
+        "judge_calls": 239,
+        "judge_enabled": true,
+        "judge_errors": 0,
+        "schema_valid_rate": 1.0,
+        "answer_accuracy": 0.8992,
+        "citation_verbatim_rate": 1.0,
+        "citation_support_rate": 0.8889,
+        "answered_rate_on_answerable": 0.9748,
+        "ooc_refusal_rate": 1.0,
+        "fabricated_count": 0,
+        "fabrication_review_complete": true,
+        "not_permitted_rate": 0.9048,
+        "role_violations": 0,
+        "role_semantic_review_complete": false,
+        "cost_per_question_usd": null,
+        "latency_p95_ms": null,
+        "measurement_note": "Cost, latency, semantic role leakage and freshness need independent runtime/reviewer evidence.",
+        "slices": {
+          "contradiction": {
+            "n": 8,
+            "answer_accuracy": 1.0
+          },
+          "temporal": {
+            "n": 19,
+            "answer_accuracy": 0.9474
+          }
+        }
+      },
+      "report_path": "results/raw/dev-20261111-105319.report.json",
+      "second_judge": {
+        "model": "openai/gpt-oss-120b",
+        "provider": "https://api.groq.com/openai/v1",
+        "purpose": "judge-noise check on the same answers; grades only",
+        "report_path": "results/raw/dev-20261111-105319.judge-gpt-oss-120b.report.json",
+        "grader": {
+          "grader_version": "2.0",
+          "n": 146,
+          "judge_calls": 239,
+          "judge_enabled": true,
+          "judge_errors": 0,
+          "schema_valid_rate": 1.0,
+          "answer_accuracy": 0.8739,
+          "citation_verbatim_rate": 1.0,
+          "citation_support_rate": 0.8974,
+          "answered_rate_on_answerable": 0.9748,
+          "ooc_refusal_rate": 1.0,
+          "fabricated_count": 0,
+          "fabrication_review_complete": true,
+          "not_permitted_rate": 0.9048,
+          "role_violations": 0,
+          "role_semantic_review_complete": false,
+          "cost_per_question_usd": null,
+          "latency_p95_ms": null,
+          "measurement_note": "Cost, latency, semantic role leakage and freshness need independent runtime/reviewer evidence.",
+          "slices": {
+            "contradiction": {
+              "n": 8,
+              "answer_accuracy": 0.625
+            },
+            "temporal": {
+              "n": 19,
+              "answer_accuracy": 0.9474
+            }
+          }
+        },
+        "agreement_with_first_judge": {
+          "correctness_same_verdict": "107 of 116 answered",
+          "support_same_verdict": "115 of 116 answered"
+        }
+      },
+      "provider_latency_seconds": {
+        "calls": 137,
+        "p50": 0.969,
+        "p95": 1.784,
+        "max": 4.625,
+        "note": "upstream time per generator call, one call at a time (results/raw/ledger.jsonl); not a concurrency-12 measurement"
+      }
+    },
+    {
+      "run_id": "ooc_nearmiss-20261111-115656",
+      "started": "2026-11-11T11:56:56+0530",
+      "split": "ooc_nearmiss",
+      "model": "qwen/qwen3.8-27b",
+      "gen_extra": {
+        "reasoning_effort": "low"
+      },
+      "provider": "https://api.groq.com/openai/v1",
+      "price_source": "https://console.groq.com/docs/models, retrieved 2026-11-10",
+      "judge_model": "openai/gpt-oss-20b",
+      "seed": null,
+      "status": "completed",
+      "note": "16 near-miss out-of-corpus questions: regulation in corpus, fact absent",
+      "concurrency": 1,
+      "input_sha256": "d37e4bbf3ef7164d3a30ebec13a7c433cd0555914807017c0571b1667ec9e6eb",
+      "raw_path": "results/raw/ooc_nearmiss-20261111-115656.jsonl",
+      "questions": 16,
+      "errors": 0,
+      "input_tokens_per_question": 1044.8,
+      "output_tokens_per_question": 217.6,
+      "latency_p95_ms": 16374.7,
+      "cost_usd": 0.0273,
+      "retrieval": {
+        "recall@1": 0.0,
+        "recall@3": 0.0,
+        "recall@6": 0.0,
+        "gates (expected -> decided before the model)": {
+          "not_in_corpus -> not_in_corpus": 2,
+          "not_in_corpus -> to_model": 14
+        }
+      },
+      "grader": {
+        "grader_version": "2.0",
+        "n": 16,
+        "judge_calls": 16,
+        "judge_enabled": true,
+        "judge_errors": 0,
+        "schema_valid_rate": 1.0,
+        "answer_accuracy": null,
+        "citation_verbatim_rate": null,
+        "citation_support_rate": null,
+        "answered_rate_on_answerable": null,
+        "ooc_refusal_rate": 1.0,
+        "fabricated_count": 0,
+        "fabrication_review_complete": true,
+        "not_permitted_rate": null,
+        "role_violations": 0,
+        "role_semantic_review_complete": false,
+        "cost_per_question_usd": null,
+        "latency_p95_ms": null,
+        "measurement_note": "Cost, latency, semantic role leakage and freshness need independent runtime/reviewer evidence.",
+        "slices": {
+          "contradiction": {
+            "n": 0,
+            "answer_accuracy": null
+          },
+          "temporal": {
+            "n": 0,
+            "answer_accuracy": null
+          }
+        }
+      },
+      "report_path": "results/raw/ooc_nearmiss-20261111-115656.report.json"
+    }
+  ],
+  "tested_on": {
+    "provider": "Groq, https://api.groq.com/openai/v1 (free tier)",
+    "generator": "qwen/qwen3.8-27b, reasoning_effort low",
+    "development_judge": "openai/gpt-oss-20b",
+    "second_judge": "openai/gpt-oss-120b",
+    "not_tested": [
+      "gpt-5-mini-2025-08-07",
+      "gpt-4.1-mini-2025-04-14"
+    ],
+    "price_source": "https://console.groq.com/docs/models, retrieved 2026-11-10 and 2026-11-11",
+    "spend_at_list_price_usd": {
+      "qwen/qwen3.8-27b": 1.077,
+      "openai/gpt-oss-20b": 0.069,
+      "openai/gpt-oss-120b": 0.038,
+      "total": 1.18,
+      "basis": "every non-cached call in results/raw/ledger.jsonl, including aborted runs; actual charge was 0 (free tier)",
+      "note_on_runs": "per-run cost_usd fields cover the generator only; judge calls are in the total above"
+    },
+    "fallback_generator": "gpt-5-mini-2025-08-07, used only if the gateway reports the configured model as not found; exercised with a fake model only, no measured quality",
+    "input_tokens_per_question_gpt_tokenizer_estimate": {
+      "o200k_base": 861.4,
+      "per_model_call": 1023,
+      "basis": "prompts of run dev-20261111-105319 recounted locally with tiktoken; an estimate, not gateway usage"
+    }
+  },
+  "benchmark": {
+    "repository": "https://github.com/Deployment-inc/Deployment.inc-Hiring-Problems",
+    "commit": "d87699bb97de6504b33f681eed66918a4d433ba0",
+    "note": "grader.py, rubric.md, corpus and question files used unmodified from references/OP-05 at this commit"
+  }
+}

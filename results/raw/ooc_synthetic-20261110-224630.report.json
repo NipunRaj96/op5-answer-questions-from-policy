@@ -1,0 +1,356 @@
+{
+  "summary": {
+    "grader_version": "2.0",
+    "n": 20,
+    "judge_calls": 20,
+    "judge_enabled": true,
+    "judge_errors": 0,
+    "schema_valid_rate": 1.0,
+    "answer_accuracy": null,
+    "citation_verbatim_rate": null,
+    "citation_support_rate": null,
+    "answered_rate_on_answerable": null,
+    "ooc_refusal_rate": 0.95,
+    "fabricated_count": 0,
+    "fabrication_review_complete": true,
+    "not_permitted_rate": null,
+    "role_violations": 0,
+    "role_semantic_review_complete": false,
+    "cost_per_question_usd": null,
+    "latency_p95_ms": null,
+    "measurement_note": "Cost, latency, semantic role leakage and freshness need independent runtime/reviewer evidence.",
+    "slices": {
+      "contradiction": {
+        "n": 0,
+        "answer_accuracy": null
+      },
+      "temporal": {
+        "n": 0,
+        "answer_accuracy": null
+      }
+    }
+  },
+  "rows": [
+    {
+      "id": "syn-ooc-01",
+      "tags": [
+        "out_of_corpus",
+        "synthetic"
+      ],
+      "expected_status": "not_in_corpus",
+      "status": "not_in_corpus",
+      "schema_valid": true,
+      "status_ok": true,
+      "correct": null,
+      "verbatim_ok": null,
+      "support_ok": null,
+      "fabricated": false,
+      "role_violation": false
+    },
+    {
+      "id": "syn-ooc-02",
+      "tags": [
+        "out_of_corpus",
+        "synthetic"
+      ],
+      "expected_status": "not_in_corpus",
+      "status": "not_in_corpus",
+      "schema_valid": true,
+      "status_ok": true,
+      "correct": null,
+      "verbatim_ok": null,
+      "support_ok": null,
+      "fabricated": false,
+      "role_violation": false
+    },
+    {
+      "id": "syn-ooc-03",
+      "tags": [
+        "out_of_corpus",
+        "synthetic"
+      ],
+      "expected_status": "not_in_corpus",
+      "status": "not_in_corpus",
+      "schema_valid": true,
+      "status_ok": true,
+      "correct": null,
+      "verbatim_ok": null,
+      "support_ok": null,
+      "fabricated": false,
+      "role_violation": false
+    },
+    {
+      "id": "syn-ooc-04",
+      "tags": [
+        "out_of_corpus",
+        "synthetic"
+      ],
+      "expected_status": "not_in_corpus",
+      "status": "not_in_corpus",
+      "schema_valid": true,
+      "status_ok": true,
+      "correct": null,
+      "verbatim_ok": null,
+      "support_ok": null,
+      "fabricated": false,
+      "role_violation": false
+    },
+    {
+      "id": "syn-ooc-05",
+      "tags": [
+        "out_of_corpus",
+        "synthetic"
+      ],
+      "expected_status": "not_in_corpus",
+      "status": "not_in_corpus",
+      "schema_valid": true,
+      "status_ok": true,
+      "correct": null,
+      "verbatim_ok": null,
+      "support_ok": null,
+      "fabricated": false,
+      "role_violation": false
+    },
+    {
+      "id": "syn-ooc-06",
+      "tags": [
+        "out_of_corpus",
+        "synthetic"
+      ],
+      "expected_status": "not_in_corpus",
+      "status": "not_in_corpus",
+      "schema_valid": true,
+      "status_ok": true,
+      "correct": null,
+      "verbatim_ok": null,
+      "support_ok": null,
+      "fabricated": false,
+      "role_violation": false
+    },
+    {
+      "id": "syn-ooc-07",
+      "tags": [
+        "out_of_corpus",
+        "synthetic"
+      ],
+      "expected_status": "not_in_corpus",
+      "status": "not_in_corpus",
+      "schema_valid": true,
+      "status_ok": true,
+      "correct": null,
+      "verbatim_ok": null,
+      "support_ok": null,
+      "fabricated": false,
+      "role_violation": false
+    },
+    {
+      "id": "syn-ooc-08",
+      "tags": [
+        "out_of_corpus",
+        "synthetic"
+      ],
+      "expected_status": "not_in_corpus",
+      "status": "not_in_corpus",
+      "schema_valid": true,
+      "status_ok": true,
+      "correct": null,
+      "verbatim_ok": null,
+      "support_ok": null,
+      "fabricated": false,
+      "role_violation": false
+    },
+    {
+      "id": "syn-ooc-09",
+      "tags": [
+        "out_of_corpus",
+        "synthetic"
+      ],
+      "expected_status": "not_in_corpus",
+      "status": "not_in_corpus",
+      "schema_valid": true,
+      "status_ok": true,
+      "correct": null,
+      "verbatim_ok": null,
+      "support_ok": null,
+      "fabricated": false,
+      "role_violation": false
+    },
+    {
+      "id": "syn-ooc-10",
+      "tags": [
+        "out_of_corpus",
+        "synthetic"
+      ],
+      "expected_status": "not_in_corpus",
+      "status": "not_permitted",
+      "schema_valid": true,
+      "status_ok": false,
+      "correct": null,
+      "verbatim_ok": null,
+      "support_ok": null,
+      "fabricated": false,
+      "role_violation": false
+    },
+    {
+      "id": "syn-ooc-11",
+      "tags": [
+        "out_of_corpus",
+        "synthetic"
+      ],
+      "expected_status": "not_in_corpus",
+      "status": "not_in_corpus",
+      "schema_valid": true,
+      "status_ok": true,
+      "correct": null,
+      "verbatim_ok": null,
+      "support_ok": null,
+      "fabricated": false,
+      "role_violation": false
+    },
+    {
+      "id": "syn-ooc-12",
+      "tags": [
+        "out_of_corpus",
+        "synthetic"
+      ],
+      "expected_status": "not_in_corpus",
+      "status": "not_in_corpus",
+      "schema_valid": true,
+      "status_ok": true,
+      "correct": null,
+      "verbatim_ok": null,
+      "support_ok": null,
+      "fabricated": false,
+      "role_violation": false
+    },
+    {
+      "id": "syn-ooc-13",
+      "tags": [
+        "out_of_corpus",
+        "synthetic"
+      ],
+      "expected_status": "not_in_corpus",
+      "status": "not_in_corpus",
+      "schema_valid": true,
+      "status_ok": true,
+      "correct": null,
+      "verbatim_ok": null,
+      "support_ok": null,
+      "fabricated": false,
+      "role_violation": false
+    },
+    {
+      "id": "syn-ooc-14",
+      "tags": [
+        "out_of_corpus",
+        "synthetic"
+      ],
+      "expected_status": "not_in_corpus",
+      "status": "not_in_corpus",
+      "schema_valid": true,
+      "status_ok": true,
+      "correct": null,
+      "verbatim_ok": null,
+      "support_ok": null,
+      "fabricated": false,
+      "role_violation": false
+    },
+    {
+      "id": "syn-ooc-15",
+      "tags": [
+        "out_of_corpus",
+        "synthetic"
+      ],
+      "expected_status": "not_in_corpus",
+      "status": "not_in_corpus",
+      "schema_valid": true,
+      "status_ok": true,
+      "correct": null,
+      "verbatim_ok": null,
+      "support_ok": null,
+      "fabricated": false,
+      "role_violation": false
+    },
+    {
+      "id": "syn-ooc-16",
+      "tags": [
+        "out_of_corpus",
+        "synthetic"
+      ],
+      "expected_status": "not_in_corpus",
+      "status": "not_in_corpus",
+      "schema_valid": true,
+      "status_ok": true,
+      "correct": null,
+      "verbatim_ok": null,
+      "support_ok": null,
+      "fabricated": false,
+      "role_violation": false
+    },
+    {
+      "id": "syn-ooc-17",
+      "tags": [
+        "out_of_corpus",
+        "synthetic"
+      ],
+      "expected_status": "not_in_corpus",
+      "status": "not_in_corpus",
+      "schema_valid": true,
+      "status_ok": true,
+      "correct": null,
+      "verbatim_ok": null,
+      "support_ok": null,
+      "fabricated": false,
+      "role_violation": false
+    },
+    {
+      "id": "syn-ooc-18",
+      "tags": [
+        "out_of_corpus",
+        "synthetic"
+      ],
+      "expected_status": "not_in_corpus",
+      "status": "not_in_corpus",
+      "schema_valid": true,
+      "status_ok": true,
+      "correct": null,
+      "verbatim_ok": null,
+      "support_ok": null,
+      "fabricated": false,
+      "role_violation": false
+    },
+    {
+      "id": "syn-ooc-19",
+      "tags": [
+        "out_of_corpus",
+        "synthetic"
+      ],
+      "expected_status": "not_in_corpus",
+      "status": "not_in_corpus",
+      "schema_valid": true,
+      "status_ok": true,
+      "correct": null,
+      "verbatim_ok": null,
+      "support_ok": null,
+      "fabricated": false,
+      "role_violation": false
+    },
+    {
+      "id": "syn-ooc-20",
+      "tags": [
+        "out_of_corpus",
+        "synthetic"
+      ],
+      "expected_status": "not_in_corpus",
+      "status": "not_in_corpus",
+      "schema_valid": true,
+      "status_ok": true,
+      "correct": null,
+      "verbatim_ok": null,
+      "support_ok": null,
+      "fabricated": false,
+      "role_violation": false
+    }
+  ],
+  "citations": []
+}

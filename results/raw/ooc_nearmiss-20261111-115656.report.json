@@ -1,0 +1,292 @@
+{
+  "summary": {
+    "grader_version": "2.0",
+    "n": 16,
+    "judge_calls": 16,
+    "judge_enabled": true,
+    "judge_errors": 0,
+    "schema_valid_rate": 1.0,
+    "answer_accuracy": null,
+    "citation_verbatim_rate": null,
+    "citation_support_rate": null,
+    "answered_rate_on_answerable": null,
+    "ooc_refusal_rate": 1.0,
+    "fabricated_count": 0,
+    "fabrication_review_complete": true,
+    "not_permitted_rate": null,
+    "role_violations": 0,
+    "role_semantic_review_complete": false,
+    "cost_per_question_usd": null,
+    "latency_p95_ms": null,
+    "measurement_note": "Cost, latency, semantic role leakage and freshness need independent runtime/reviewer evidence.",
+    "slices": {
+      "contradiction": {
+        "n": 0,
+        "answer_accuracy": null
+      },
+      "temporal": {
+        "n": 0,
+        "answer_accuracy": null
+      }
+    }
+  },
+  "rows": [
+    {
+      "id": "syn-near-01",
+      "tags": [
+        "out_of_corpus",
+        "synthetic_near_miss"
+      ],
+      "expected_status": "not_in_corpus",
+      "status": "not_in_corpus",
+      "schema_valid": true,
+      "status_ok": true,
+      "correct": null,
+      "verbatim_ok": null,
+      "support_ok": null,
+      "fabricated": false,
+      "role_violation": false
+    },
+    {
+      "id": "syn-near-02",
+      "tags": [
+        "out_of_corpus",
+        "synthetic_near_miss"
+      ],
+      "expected_status": "not_in_corpus",
+      "status": "not_in_corpus",
+      "schema_valid": true,
+      "status_ok": true,
+      "correct": null,
+      "verbatim_ok": null,
+      "support_ok": null,
+      "fabricated": false,
+      "role_violation": false
+    },
+    {
+      "id": "syn-near-03",
+      "tags": [
+        "out_of_corpus",
+        "synthetic_near_miss"
+      ],
+      "expected_status": "not_in_corpus",
+      "status": "not_in_corpus",
+      "schema_valid": true,
+      "status_ok": true,
+      "correct": null,
+      "verbatim_ok": null,
+      "support_ok": null,
+      "fabricated": false,
+      "role_violation": false
+    },
+    {
+      "id": "syn-near-04",
+      "tags": [
+        "out_of_corpus",
+        "synthetic_near_miss"
+      ],
+      "expected_status": "not_in_corpus",
+      "status": "not_in_corpus",
+      "schema_valid": true,
+      "status_ok": true,
+      "correct": null,
+      "verbatim_ok": null,
+      "support_ok": null,
+      "fabricated": false,
+      "role_violation": false
+    },
+    {
+      "id": "syn-near-05",
+      "tags": [
+        "out_of_corpus",
+        "synthetic_near_miss"
+      ],
+      "expected_status": "not_in_corpus",
+      "status": "not_in_corpus",
+      "schema_valid": true,
+      "status_ok": true,
+      "correct": null,
+      "verbatim_ok": null,
+      "support_ok": null,
+      "fabricated": false,
+      "role_violation": false
+    },
+    {
+      "id": "syn-near-06",
+      "tags": [
+        "out_of_corpus",
+        "synthetic_near_miss"
+      ],
+      "expected_status": "not_in_corpus",
+      "status": "not_in_corpus",
+      "schema_valid": true,
+      "status_ok": true,
+      "correct": null,
+      "verbatim_ok": null,
+      "support_ok": null,
+      "fabricated": false,
+      "role_violation": false
+    },
+    {
+      "id": "syn-near-07",
+      "tags": [
+        "out_of_corpus",
+        "synthetic_near_miss"
+      ],
+      "expected_status": "not_in_corpus",
+      "status": "not_in_corpus",
+      "schema_valid": true,
+      "status_ok": true,
+      "correct": null,
+      "verbatim_ok": null,
+      "support_ok": null,
+      "fabricated": false,
+      "role_violation": false
+    },
+    {
+      "id": "syn-near-08",
+      "tags": [
+        "out_of_corpus",
+        "synthetic_near_miss"
+      ],
+      "expected_status": "not_in_corpus",
+      "status": "not_in_corpus",
+      "schema_valid": true,
+      "status_ok": true,
+      "correct": null,
+      "verbatim_ok": null,
+      "support_ok": null,
+      "fabricated": false,
+      "role_violation": false
+    },
+    {
+      "id": "syn-near-09",
+      "tags": [
+        "out_of_corpus",
+        "synthetic_near_miss"
+      ],
+      "expected_status": "not_in_corpus",
+      "status": "not_in_corpus",
+      "schema_valid": true,
+      "status_ok": true,
+      "correct": null,
+      "verbatim_ok": null,
+      "support_ok": null,
+      "fabricated": false,
+      "role_violation": false
+    },
+    {
+      "id": "syn-near-10",
+      "tags": [
+        "out_of_corpus",
+        "synthetic_near_miss"
+      ],
+      "expected_status": "not_in_corpus",
+      "status": "not_in_corpus",
+      "schema_valid": true,
+      "status_ok": true,
+      "correct": null,
+      "verbatim_ok": null,
+      "support_ok": null,
+      "fabricated": false,
+      "role_violation": false
+    },
+    {
+      "id": "syn-near-11",
+      "tags": [
+        "out_of_corpus",
+        "synthetic_near_miss"
+      ],
+      "expected_status": "not_in_corpus",
+      "status": "not_in_corpus",
+      "schema_valid": true,
+      "status_ok": true,
+      "correct": null,
+      "verbatim_ok": null,
+      "support_ok": null,
+      "fabricated": false,
+      "role_violation": false
+    },
+    {
+      "id": "syn-near-12",
+      "tags": [
+        "out_of_corpus",
+        "synthetic_near_miss"
+      ],
+      "expected_status": "not_in_corpus",
+      "status": "not_in_corpus",
+      "schema_valid": true,
+      "status_ok": true,
+      "correct": null,
+      "verbatim_ok": null,
+      "support_ok": null,
+      "fabricated": false,
+      "role_violation": false
+    },
+    {
+      "id": "syn-near-13",
+      "tags": [
+        "out_of_corpus",
+        "synthetic_near_miss"
+      ],
+      "expected_status": "not_in_corpus",
+      "status": "not_in_corpus",
+      "schema_valid": true,
+      "status_ok": true,
+      "correct": null,
+      "verbatim_ok": null,
+      "support_ok": null,
+      "fabricated": false,
+      "role_violation": false
+    },
+    {
+      "id": "syn-near-14",
+      "tags": [
+        "out_of_corpus",
+        "synthetic_near_miss"
+      ],
+      "expected_status": "not_in_corpus",
+      "status": "not_in_corpus",
+      "schema_valid": true,
+      "status_ok": true,
+      "correct": null,
+      "verbatim_ok": null,
+      "support_ok": null,
+      "fabricated": false,
+      "role_violation": false
+    },
+    {
+      "id": "syn-near-15",
+      "tags": [
+        "out_of_corpus",
+        "synthetic_near_miss"
+      ],
+      "expected_status": "not_in_corpus",
+      "status": "not_in_corpus",
+      "schema_valid": true,
+      "status_ok": true,
+      "correct": null,
+      "verbatim_ok": null,
+      "support_ok": null,
+      "fabricated": false,
+      "role_violation": false
+    },
+    {
+      "id": "syn-near-16",
+      "tags": [
+        "out_of_corpus",
+        "synthetic_near_miss"
+      ],
+      "expected_status": "not_in_corpus",
+      "status": "not_in_corpus",
+      "schema_valid": true,
+      "status_ok": true,
+      "correct": null,
+      "verbatim_ok": null,
+      "support_ok": null,
+      "fabricated": false,
+      "role_violation": false
+    }
+  ],
+  "citations": []
+}

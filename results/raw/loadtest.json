@@ -1,0 +1,27 @@
+[
+  {
+    "start_to_healthz_s": 1.32,
+    "stub_delay_s": 2.0
+  },
+  {
+    "pass": "stub model healthy",
+    "requests": 146,
+    "http": {
+      "200": 146
+    },
+    "p50_s": 2.018,
+    "p95_s": 2.177,
+    "max_s": 2.186
+  },
+  {
+    "pass": "stub model returns HTTP 500",
+    "requests": 146,
+    "http": {
+      "200": 23,
+      "503": 123
+    },
+    "p50_s": 0.881,
+    "p95_s": 0.974,
+    "max_s": 1.01
+  }
+]

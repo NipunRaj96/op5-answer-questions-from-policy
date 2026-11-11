@@ -1,0 +1,162 @@
+[
+  {
+    "name": "tfidf plain (Phase 1 baseline)",
+    "r@1": 0.605,
+    "r@3": 0.8235,
+    "r@6": 0.8908,
+    "mrr@10": 0.7255,
+    "blk": 19,
+    "bad": 0,
+    "ms": 0.2
+  },
+  {
+    "name": "tfidf +title",
+    "r@1": 0.6303,
+    "r@3": 0.8235,
+    "r@6": 0.9244,
+    "mrr@10": 0.7346,
+    "blk": 19,
+    "bad": 0,
+    "ms": 0.3
+  },
+  {
+    "name": "bm25 plain",
+    "r@1": 0.6387,
+    "r@3": 0.8319,
+    "r@6": 0.9412,
+    "mrr@10": 0.749,
+    "blk": 20,
+    "bad": 0,
+    "ms": 0.2
+  },
+  {
+    "name": "bm25 +title",
+    "r@1": 0.6471,
+    "r@3": 0.8571,
+    "r@6": 0.9328,
+    "mrr@10": 0.7595,
+    "blk": 20,
+    "bad": 0,
+    "ms": 0.1
+  },
+  {
+    "name": "dense BAAI/bge-small-en-v1.5 plain",
+    "r@1": 0.5378,
+    "r@3": 0.7227,
+    "r@6": 0.8487,
+    "mrr@10": 0.6459,
+    "blk": 19,
+    "bad": 1,
+    "ms": 322.4
+  },
+  {
+    "name": "dense BAAI/bge-small-en-v1.5 +title",
+    "r@1": 0.5714,
+    "r@3": 0.7899,
+    "r@6": 0.8824,
+    "mrr@10": 0.6941,
+    "blk": 19,
+    "bad": 0,
+    "ms": 195.6
+  },
+  {
+    "name": "hybrid rrf(bm25, BAAI/bge-small-en-v1.5) +title",
+    "r@1": 0.6218,
+    "r@3": 0.8151,
+    "r@6": 0.9244,
+    "mrr@10": 0.7397,
+    "blk": 19,
+    "bad": 0,
+    "ms": 0.1
+  },
+  {
+    "name": "dense snowflake/snowflake-arctic-embed-s plain",
+    "r@1": 0.5462,
+    "r@3": 0.8319,
+    "r@6": 0.9076,
+    "mrr@10": 0.697,
+    "blk": 19,
+    "bad": 1,
+    "ms": 417.6
+  },
+  {
+    "name": "dense snowflake/snowflake-arctic-embed-s +title",
+    "r@1": 0.605,
+    "r@3": 0.7983,
+    "r@6": 0.8992,
+    "mrr@10": 0.716,
+    "blk": 20,
+    "bad": 1,
+    "ms": 211.2
+  },
+  {
+    "name": "hybrid rrf(bm25, snowflake/snowflake-arctic-embed-s) +title",
+    "r@1": 0.5966,
+    "r@3": 0.8739,
+    "r@6": 0.9496,
+    "mrr@10": 0.7471,
+    "blk": 19,
+    "bad": 0,
+    "ms": 0.1
+  },
+  {
+    "name": "dense sentence-transformers/all-MiniLM-L6-v2 plain",
+    "r@1": 0.4622,
+    "r@3": 0.6723,
+    "r@6": 0.8067,
+    "mrr@10": 0.5946,
+    "blk": 20,
+    "bad": 1,
+    "ms": 276.7
+  },
+  {
+    "name": "dense sentence-transformers/all-MiniLM-L6-v2 +title",
+    "r@1": 0.4622,
+    "r@3": 0.6471,
+    "r@6": 0.7815,
+    "mrr@10": 0.5822,
+    "blk": 20,
+    "bad": 1,
+    "ms": 131.7
+  },
+  {
+    "name": "hybrid rrf(bm25, sentence-transformers/all-MiniLM-L6-v2) +title",
+    "r@1": 0.5714,
+    "r@3": 0.7899,
+    "r@6": 0.916,
+    "mrr@10": 0.6974,
+    "blk": 19,
+    "bad": 0,
+    "ms": 0.1
+  },
+  {
+    "name": "dense BAAI/bge-base-en-v1.5 plain",
+    "r@1": 0.5966,
+    "r@3": 0.7899,
+    "r@6": 0.8655,
+    "mrr@10": 0.7043,
+    "blk": 19,
+    "bad": 2,
+    "ms": 1152.4
+  },
+  {
+    "name": "dense BAAI/bge-base-en-v1.5 +title",
+    "r@1": 0.563,
+    "r@3": 0.8151,
+    "r@6": 0.8824,
+    "mrr@10": 0.6962,
+    "blk": 20,
+    "bad": 1,
+    "ms": 879.9
+  },
+  {
+    "name": "hybrid rrf(bm25, BAAI/bge-base-en-v1.5) +title",
+    "r@1": 0.6387,
+    "r@3": 0.8487,
+    "r@6": 0.9328,
+    "mrr@10": 0.7576,
+    "blk": 19,
+    "bad": 1,
+    "ms": 0.1
+  }
+]
